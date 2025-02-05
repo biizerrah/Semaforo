@@ -27,12 +27,15 @@ int main() {
       gpio_init(led_pin_green);
       gpio_set_dir(led_pin_green, GPIO_OUT);
 
+      stdio_init_all();
       struct repeating_timer timer;
 
       add_repeating_timer_ms(3000, repeating_timer_callback, NULL, &timer);
 
       while(true){
+        
         sleep_ms(1000);
+        printf("Cuidado! Olhe para os 2 lados antes de atravessar!\n");
       }
       
     

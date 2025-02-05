@@ -41,7 +41,7 @@ pico_set_program_name(Clock "Clock")
 pico_set_program_version(Clock "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(Clock 0)
+pico_enable_stdio_uart(Clock 1)
 pico_enable_stdio_usb(Clock 1)
 
 # Add the standard library to the build
